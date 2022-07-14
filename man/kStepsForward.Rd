@@ -37,5 +37,5 @@ kStepsForward (X163204843_1, "163204843", "1", "2017-01-27 14:00:00", "Mean_spee
 \code{\link{loadData}}
 }
 \author{
-Aikaterini Chatzopoulou, Kleanthis Koupidis
+Aikaterini Chatzopoulou, Kleanthis Koupidis, Charalampos Bratsas
 }

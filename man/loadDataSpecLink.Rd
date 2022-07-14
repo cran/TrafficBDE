@@ -22,10 +22,6 @@ This function extracts the data of one road of Thessaloniki.
 \details{
 This function returns a data frame with the historical data of a specific road.
 }
-\examples{
-SpecLink <- loadDataSpecLink("163204843","1", X163204843_1)
-
-}
 \seealso{
 \code{\link{loadData}}
 }

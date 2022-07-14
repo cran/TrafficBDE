@@ -38,5 +38,5 @@ predicted <- PredictionCR(List,NNOut,"Mean_speed")}
 \code{\link{PreProcessingLink}}, \code{\link{TrainCR}}
 }
 \author{
-Aikaterini Chatzopoulou, Kleanthis Koupidis
+Aikaterini Chatzopoulou, Kleanthis Koupidis, Charalampos Bratsas
 }

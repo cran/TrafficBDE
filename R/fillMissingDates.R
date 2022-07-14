@@ -12,7 +12,7 @@
 #' @details 
 #' This function returns a data frame without missing dates.
 #' 
-#' @author Aikaterini Chatzopoulou
+#' @author Aikaterini Chatzopoulou, Charalampos Bratsas
 #' 
 #' @return A data frame with all the historical data between the first date and the date wanted. 
 #' 

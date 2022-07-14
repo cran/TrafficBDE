@@ -13,7 +13,7 @@
 #' @details 
 #' This function returns the predicted average speed.
 #' 
-#' @author Aikaterini Chatzopoulou, Kleanthis Koupidis
+#' @author Aikaterini Chatzopoulou, Kleanthis Koupidis, Charalampos Bratsas
 #' 
 #' @return The predicted average speed of the road
 #' 
@@ -39,15 +39,15 @@ PredictionCR <- function(List,NNOut,predict){
   # Prediction phase
   Min = List[[3]]
   Max = List[[4]]
-
+  
   testset = List[[2]]
   
   llll=list()
-  for(i in 1:8)  eval(parse(text=paste("llll[[",i,"]]=(testset[,",i,"] - Min[",i,"])/(Max[",i,"] - Min[",i,"] )")))
+    for(i in 1:length(names(testset)))  eval(parse(text=paste("llll[[",i,"]]=ifelse(Max[",i,"] == Min[",i,"], Max[",i,"],(testset[,",i,"] - Min[",i,"])/(Max[",i,"] - Min[",i,"]))")))
   
   
-  a=as.data.frame(t(unlist(llll)))
-  names(a)=names(testset)
+  a <- as.data.frame(t(unlist(llll)))
+  names(a) <- names(unlist(testset))
   
   a <- subset(a,select=colnames(a)[which(colnames(a)!=predict)])
   NNOut.predict = stats::predict(NNOut,a)
@@ -56,16 +56,16 @@ PredictionCR <- function(List,NNOut,predict){
   Max = List[[4]][names(List[[4]])==predict]
   # Denormalize values and calculate the RMSE
   Predictions = NNOut.predict*(Max - Min) + Min
-
+  
   Observations = testset[,which(colnames(testset)==predict)]
-
+  
   NNOut.predict = as.data.frame(NNOut.predict)
   
   RMSE <- sqrt(mean((Observations - Predictions)^2))
   
   result = as.numeric(c(Predictions,
-                      Observations,
-                      RMSE))
-  
+                        Observations,
+                        RMSE))
+  names(result) <- c("Predicted", "Real Value", "RMSE")
   return(result)
 }

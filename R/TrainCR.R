@@ -57,8 +57,8 @@ TrainCR <-function(List, predict){
   NNgrid = expand.grid(layer1 = c(4,5),layer2 = c(3,4),layer3 = c(4))
   
   NNOut = caret::train(f, data = trainset,method = "neuralnet", 
-                trControl = fitControl, tuneGrid = NNgrid, linear.output = TRUE,
-                na.action = stats::na.exclude)
+                       trControl = fitControl, tuneGrid = NNgrid, linear.output = TRUE,
+                       na.action = stats::na.exclude)
   
   
   cat("Training Completed.\n")

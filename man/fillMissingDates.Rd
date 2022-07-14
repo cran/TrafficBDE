@@ -31,5 +31,5 @@ newData <- fillMissingDates (x, datetime)
 \code{\link{loadData}}, \code{\link{fillMissingValues}}
 }
 \author{
-Aikaterini Chatzopoulou
+Aikaterini Chatzopoulou, Charalampos Bratsas
 }

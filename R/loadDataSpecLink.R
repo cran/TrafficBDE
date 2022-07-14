@@ -17,9 +17,6 @@
 #' 
 #' @return A data frame with the data of a specific road
 #' 
-#' @examples 
-#' SpecLink <- loadDataSpecLink("163204843","1", X163204843_1)
-#' 
 #' @seealso \code{\link{loadData}}
 #' 
 #' @rdname loadDataSpecLink

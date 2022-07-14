@@ -27,5 +27,5 @@ x <- fillMissingValues(SpecLink)
 \code{\link{loadData}}
 }
 \author{
-Aikaterini Chatzopoulou, Kleanthis Koupidis
+Aikaterini Chatzopoulou, Kleanthis Koupidis, Charalampos Bratsas
 }

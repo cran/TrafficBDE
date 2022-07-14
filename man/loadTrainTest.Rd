@@ -35,5 +35,5 @@ DataList <- loadTrainTest (newData, datetime, "Mean_speed")
 
 }
 \author{
-Aikaterini Chatzopoulou, Kleanthis Koupidis
+Aikaterini Chatzopoulou, Kleanthis Koupidis, Charalampos Bratsas
 }

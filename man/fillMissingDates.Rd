@@ -21,10 +21,11 @@ This function fills the missing dates from the data.
 This function returns a data frame without missing dates.
 }
 \examples{
+\dontrun{
 SpecLink <- loadDataSpecLink("163204843","1", X163204843_1)
 x <- fillMissingValues(SpecLink)
 datetime <- "2017-01-27 14:00:00" 
-newData <- fillMissingDates (x, datetime)
+newData <- fillMissingDates (x, datetime)}
 
 }
 \seealso{

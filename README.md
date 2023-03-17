@@ -1,5 +1,9 @@
-TrafficBDE
+TrafficBDE <img src="okfgr.png" align="right" />
 ================
+Aikaterini Chatzopoulou
+July 27, 2017
+
+# Intoduction
 
 This package was created in order to enable the creation of a neural
 network model, for the needs of a European project. “TrafficBDE”
@@ -154,7 +158,7 @@ kStepsForward(Data = Data, Link_id = "163204843", direction = "1", datetime = "2
     ## Fitting layer1 = 5, layer2 = 4, layer3 = 4 on full training set
     ## Training Completed.
     ## 
-    ## Time taken for training:  1.731493
+    ## Time taken for training:  2.140962
     ## Predicting Mean_speed for the Next Quarter...
 
     ##                     Predicted Real Value     RMSE
@@ -249,7 +253,7 @@ at 20.00 on 15 Jan. 2017
     ## Fitting layer1 = 5, layer2 = 4, layer3 = 4 on full training set
     ## Training Completed.
     ## 
-    ## Time taken for training:  1.335758
+    ## Time taken for training:  1.555087
     ## Predicting Entries for the Next Quarter...
 
     ##                     Predicted Real Value       RMSE
